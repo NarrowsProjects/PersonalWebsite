@@ -35,7 +35,7 @@ export default {
       <span>{{ utility.name }}</span>
       <div class="rating">
         <div v-for="score in [1,2,3,4,5]">
-          <input type="radio" :name="'skill-'+index" disabled><label :for="'skill-'+index+'-star'+score" :title="score+ 'stars'">▄</label>
+          <input class="hidden" type="radio" :name="'skill-'+index" disabled><label :for="'skill-'+index+'-star'+score" :title="score+ 'stars'">▄</label>
         </div>
        </div>
     </div>
@@ -46,7 +46,8 @@ export default {
     <div class="skill-rating" v-for="(framework,index) in frameWorks" :key="index">
       <span>{{ framework.name }}</span>
       <div class="rating">
-        <input v-for="score in [1,2,3,4,5]" :key="score" type="radio" :name="'skill-'+index" disabled :checked="score==framework.score"><label>▄</label>
+
+        <input v-for="score in [1,2,3,4,5]" :key="score" class="hidden"  type="radio" :name="'skill-'+index" disabled :checked="score==framework.score"><label>▄</label>
       </div>
     </div>
   </article>
@@ -54,5 +55,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
+.hidden{
+  display: none;
+}
 </style>

@@ -9,9 +9,6 @@
       <div class="row">
         <div class="col-md-4">
           <ProfileComponent/>
-<!--          <SkillsComponent/>-->
-
-
           <h4 class="red">Skills</h4>
           <h5 class="yellow">Utility</h5>
           <article>
