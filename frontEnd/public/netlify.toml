@@ -1,0 +1,46 @@
+# Redirects
+[[redirects]]
+from = "/assets/cv.pdf"
+to = "/cv"
+status = 301
+
+[[redirects]]
+from = "/cv.html"
+to = "/cv"
+status = 301
+
+[[redirects]]
+from = "/index.php"
+to = "/"
+status = 301
+
+[[redirects]]
+status = d301
+
+# Default favicon redirect
+[[redirects]]
+from = "/favicon.ico"
+to = "https://assets.remzi.info/assets/images/logo.png"
+status = 301
+
+# Pages
+[[redirects]]
+from = "/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/portfolio"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/cv"
+to = "/index.html"
+status = 200
+
+# 404
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 404
