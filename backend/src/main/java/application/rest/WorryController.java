@@ -24,6 +24,10 @@ public class WorryController {
     public ResponseEntity<List<Worry>> getAllWorries() {
         return ResponseEntity.ok(repository.findAll());
     }
+    @GetMapping("names")
+    public ResponseEntity<List<String>> getAllNames() {
+        return ResponseEntity.ok(repository.findAllNames());
+    }
 
     @PostMapping
     public ResponseEntity<Worry> createWorry(@RequestBody Worry worry) {

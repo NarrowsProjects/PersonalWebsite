@@ -4,7 +4,7 @@ export class RestAPI {
 
     constructor() {}
 
-    async fetchJson(url: string, options: any = null): Promise<Array<Worry>|null> {
+    async fetchJson(url: string, options: any = null): Promise<any> { // using any because one of the options fetches names
         let response = await fetch(url, options);
         if (response.ok) {
             return await response.json();
@@ -27,6 +27,10 @@ export class RestAPI {
 
     async asyncFindAll(): Promise<Array<Worry>| null>  {
         const url = "http://localhost:8083/backend/worries";
+        return await this.fetchJson(url);
+    }
+    async asyncFetchNames(): Promise<string[]>  {
+        const url = "http://localhost:8083/backend/worries/names";
         return await this.fetchJson(url);
     }
 

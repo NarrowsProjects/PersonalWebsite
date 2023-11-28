@@ -8,20 +8,24 @@ export default {
   name: "IssueForm",
   data: function () {
     return {
-      title: "",
-      name: "",
-      type: "",
+      title: "" as string,
+      name: ""as string,
+      type: ""as string,
+      names:[]as string[],
       explanation: "",
       check: false,
       handler: new RestAPI()
     }
   },
+  async created(){
+    if (this.names.length==0) this.names = await this.handler.asyncFetchNames()
+  },
   methods: {
-    async createIssue(event: SubmitEvent) {
+    async createIssue(event: Event) {
       event.preventDefault();
       if (this.title && this.name && this.type && this.explanation && this.explanation){
         const worry:Worry= {date:new Date(),title:this.title, name:this.name[0], type:this.type[0], explanation:this.explanation};
-        console.log(await this.handler.asyncSave(worry));
+        await this.handler.asyncSave(worry);
       }
     }
   }
@@ -41,10 +45,7 @@ export default {
         <label for="exampleFormControlSelect1">Subject</label>
         <select required multiple v-model.lazy="name" :class="'form-control'+(check&&!name?' border-danger':'')"
                 id="exampleFormControlSelect1">
-          <option>Mourad</option>
-          <option>Mohammed(L)</option>
-          <option>Mohamed(E)</option>
-          <option>Guust</option>
+          <option v-for="name in names">{{ name }}</option>
         </select>
       </div>
       <div class="form-group">
