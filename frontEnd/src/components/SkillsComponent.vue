@@ -21,8 +21,7 @@ export default {
         {name: "MySQL",score:3},
       ] as skill[],
     }
-  }
-
+  },
 }
 </script>
 
@@ -30,14 +29,13 @@ export default {
   <h4 class="red">Skills</h4>
   <h5 class="yellow">Utility</h5>
   <article>
-
     <div class="skill-rating" v-for="(utility,index) in utilities" :key="index">
       <span>{{ utility.name }}</span>
       <div class="rating">
-        <div v-for="score in [1,2,3,4,5]">
-          <input class="hidden" type="radio" :name="'skill-'+index" disabled><label :for="'skill-'+index+'-star'+score" :title="score+ 'stars'">▄</label>
-        </div>
-       </div>
+        <template v-for="number in [5,4,3,2,1]" :key="number">
+          <input type="radio" :name="'skill-'+index" disabled :checked="number===utility.score"><label @click="utility.score=2">▄</label>
+        </template>
+      </div>
     </div>
 
   </article>
@@ -46,16 +44,20 @@ export default {
     <div class="skill-rating" v-for="(framework,index) in frameWorks" :key="index">
       <span>{{ framework.name }}</span>
       <div class="rating">
-
-        <input v-for="score in [1,2,3,4,5]" :key="score" class="hidden"  type="radio" :name="'skill-'+index" disabled :checked="score==framework.score"><label>▄</label>
+        <template v-for="score in [5,4,3,2,1]" :key="score">
+          <input type="radio" :name="'skill-'+index+utilities.length" disabled :checked="score===framework.score"><label>▄</label>
+        </template>
       </div>
     </div>
   </article>
 
 </template>
 
-<style scoped lang="scss">
-.hidden{
-  display: none;
+<style lang="scss" scoped>
+img {
+  width: 100%;
+}
+article{
+  margin-left: 10px;
 }
 </style>

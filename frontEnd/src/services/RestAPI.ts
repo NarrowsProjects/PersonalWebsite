@@ -29,6 +29,7 @@ export class RestAPI {
         const url = "http://localhost:8083/backend/worries";
         return await this.fetchJson(url);
     }
+
     async asyncFetchNames(): Promise<string[]>  {
         const url = "http://localhost:8083/backend/worries/names";
         return await this.fetchJson(url);
