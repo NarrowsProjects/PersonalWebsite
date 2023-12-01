@@ -9,16 +9,17 @@ export default {
     return{
       utilities:[
         {name: "Dutch",score: 4},
-        {name: "English",score:5},
-        {name: "Full Stack Development",score:3}
+        {name: "English",score:4},
+        {name: "Full Stack Development",score:3},
+        {name: "Scrum",score:3}
       ] as skill[],
       frameWorks:[
         {name: "Java",score: 4},
-        {name: "Java/Type - Script",score:3},
+        {name: "Java/Type - Script",score:4},
         {name: "Vue/Vite",score:3},
-        {name: "Angular",score:2},
         {name: "SpringBoot",score:4},
         {name: "MySQL",score:3},
+        {name: "MongoDB",score:2}
       ] as skill[],
     }
   },

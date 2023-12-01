@@ -3,12 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-8">
-          <h1>I am {{ naam }}</h1>
+          <h1>I am {{ name }}</h1>
           <p>
             I am studying Software Engineering at the Amsterdam University of Applied Sciences. My website is still bare,
             but I am working on filling it with my projects. Currently, the following sections are available:
-            <div v-for="component in componenten" @click="redirect(component)"><a>{{ component.naam }}</a></div>
-            <img src="../assets/img/emoji/laughing.webp" alt="😆" width="24" height="24">
+            <div class="btn btn-link" v-for="component in componenten" @click="redirect(component)"><a>{{ component.name }}</a></div>
           </p>
           <h2>I work with open source <img src="../assets/img/emoji/rocket.webp" alt="🚀" width="32" height="32">
           </h2>
@@ -54,22 +53,27 @@
 
 <script lang="ts">
 import Sidebar from '@/Sidebar.vue'
+interface component{
+  name:string,
+  redirect:string
+}
 
 export default {
   name: 'Home',
   components: {Sidebar},
   data(){
     return{
-      naam: "Guust Metz",
+      name: "Guust Metz",
       componenten : [
-        {naam:"Portfolio",herleiding:"portfolio"},
-        {naam:"CV",herleiding:"cv"}
-      ]
+        {name:"Portfolio",redirect:"portfolio"},
+        {name:"CV",redirect:"cv"},
+        {name:"Collaboration-log",redirect:"collaboration/table"}
+      ] as component[]
     }
   },
   methods:{
-    redirect(component:any){
-    this.$router.push(component.herleiding)
+    redirect(component:component){
+    this.$router.push(component.redirect)
     }
   }
 }
