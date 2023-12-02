@@ -52,8 +52,8 @@ export default {
         <label for="exampleFormControlSelect2">Category</label>
         <select required multiple :class="'form-control'+(check&&!type?' border-danger':'')" v-model.lazy="type"
                 id="exampleFormControlSelect2">
-          <option>Agreement</option>
-          <option>Violation</option>
+          <option>Deadline</option>
+          <option>Role</option>
           <option>Concern</option>
           <option>Hindrance</option>
         </select>

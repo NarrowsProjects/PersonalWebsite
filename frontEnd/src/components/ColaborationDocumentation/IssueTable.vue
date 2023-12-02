@@ -45,9 +45,9 @@ async created(){
         <label for="exampleFormControlSelect1">Subject</label>
         <select v-model="name" class="form-control" id="exampleFormControlSelect1">
           <option selected >-</option>
-          <option>Mourad</option>
-          <option>Mohammed(L)</option>
-          <option>Mohamed(E)</option>
+          <option>(substitute name)</option>
+          <option>(substitute name)</option>
+          <option>(substitute name)</option>
           <option>Guust</option>
         </select>
       </div>
@@ -55,7 +55,8 @@ async created(){
         <label for="exampleFormControlSelect2">Category</label>
         <select v-model="type" class="form-control" id="exampleFormControlSelect2">
           <option>-</option>
-          <option>Violation</option>
+          <option>Deadline</option>
+          <option>Role</option>
           <option>Concern</option>
           <option>Hindrance</option>
         </select>
