@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary d-print-none">
     <div class="container">
       <router-link class="navbar-brand" to="/">
-        <img src="https://assets.remzi.info/assets/images/logo.png" alt="Logo">
+        <img :src="require('../assets/img/logo.png')" alt="Logo">
       </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu-navbar"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
             <router-link class="nav-link d-none d-lg-block" to="/cv">CV</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link d-none d-lg-block" to="/collaboration/table">Collaboration</router-link>
+            <router-link class="nav-link d-none d-lg-block" to="/collaboration/table">Collaboration-log</router-link>
           </li>
         </ul>
       </div>
