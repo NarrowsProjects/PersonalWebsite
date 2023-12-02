@@ -16,7 +16,7 @@
             It's also a hobby that provides a great opportunity for personal development.
           </p>
           <p>
-            Mijn public projecten zijn te vinden op: <a href="https://github.com/NarrowsProjects/testing"
+            My public projects or lack thereof are available on: <a href="https://github.com/NarrowsProjects"
                                                                         target="_blank">github.com/NarrowsProjects/</a>
           </p>
           <p class="mb-4">
