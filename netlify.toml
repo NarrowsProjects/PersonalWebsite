@@ -1,0 +1,3 @@
+[build]
+command = "cd frontend && npm install && npm run build && cd ../backend && ./mvnw clean install"
+publish = "backend/.mvn/wrapper/maven-wrapper.jar, frontend/dist"
