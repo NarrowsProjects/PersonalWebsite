@@ -69,7 +69,7 @@ export default {
       name: "Guust Metz",
       componenten : [
         {name:"Portfolio",redirect:"portfolio"},
-        {name:"CV",redirect:"cv"},
+        {name:"Resume",redirect:"cv"},
         {name:"Collaboration-log",redirect:"collaboration/table"}
       ] as component[]
     }

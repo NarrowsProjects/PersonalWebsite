@@ -14,11 +14,11 @@
     <p>
       <strong><i class="bi bi-linkedin"></i> LinkedIn:</strong> <a
         href="https://www.linkedin.com/in/guustmetz" target="_blank">linkedin.com/in/guustMetz</a><br>
-      <strong><i class="bi bi-github"></i> GitHub:</strong> <a href="https://github.com/NarrowsProjects/testing"
+      <strong><i class="bi bi-github"></i> GitHub:</strong> <a href="https://github.com/NarrowsProjects"
                                                                target="_blank">github.com/NarrowsProjects/</a>
     </p>
     <p>
-      <a class="btn btn-primary" href="https://assets.remzi.info/assets/docs/Curriculum-vitae-R.Cavdar.pdf"
+      <a class="btn btn-primary" href="../assets/Resume.pdf"
          role="button" download="Curriculum-vitae–G.Metz.pdf">Download Resume</a>
     </p>
   </div>

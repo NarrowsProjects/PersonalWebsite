@@ -19,7 +19,7 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link d-lg-none" to="/cv">
-              <span data-bs-toggle="collapse" data-bs-target="#main-menu-navbar">CV</span>
+              <span data-bs-toggle="collapse" data-bs-target="#main-menu-navbar">Resume</span>
             </router-link>
             <router-link class="nav-link d-none d-lg-block" to="/cv">CV</router-link>
           </li>
