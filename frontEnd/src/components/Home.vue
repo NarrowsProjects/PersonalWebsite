@@ -70,7 +70,7 @@ export default {
       componenten : [
         {name:"Portfolio",redirect:"portfolio"},
         {name:"Resume",redirect:"cv"},
-        {name:"Collaboration-log",redirect:"collaboration/table"}
+        // {name:"Collaboration-log",redirect:"collaboration/table"}
       ] as component[]
     }
   },

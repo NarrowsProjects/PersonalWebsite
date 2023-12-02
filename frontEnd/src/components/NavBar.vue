@@ -23,9 +23,9 @@
             </router-link>
             <router-link class="nav-link d-none d-lg-block" to="/cv">CV</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link d-none d-lg-block" to="/collaboration/table">Collaboration-log</router-link>
-          </li>
+<!--          <li class="nav-item">-->
+<!--            <router-link class="nav-link d-none d-lg-block" to="/collaboration/table">Collaboration-log</router-link>-->
+<!--          </li>-->
         </ul>
       </div>
     </div>
