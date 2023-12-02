@@ -18,14 +18,21 @@
                                                                target="_blank">github.com/NarrowsProjects/</a>
     </p>
     <p>
-      <a class="btn btn-primary" href="../assets/Resume.pdf"
+      <a class="btn btn-primary" :href="resume"
          role="button" download="Curriculum-vitae–G.Metz.pdf">Download Resume</a>
     </p>
   </div>
 </template>
 
 <script lang="ts">
+import  resume from "../assets/Resume.pdf"
+
 export default {
-  name: 'Sidebar'
+  name: 'Sidebar',
+  data(){
+    return{
+      resume:resume
+    }
+  }
 }
 </script>
