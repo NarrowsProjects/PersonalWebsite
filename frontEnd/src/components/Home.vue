@@ -18,8 +18,8 @@
           <p>
             My public projects or lack thereof are available on: <a href="https://github.com/NarrowsProjects"
                                                                         target="_blank">github.com/NarrowsProjects/</a>
-            And while you're looking at open source anyway, you might as well look at the guy who's website I blatantly stole.
-            -> <a href="https://remzi.info/">Remzi Cavdar</a>  {{'<-'}}
+<!--            And while you're looking at open source anyway, you might as well look at the guy who's website I blatantly stole.-->
+<!--            -> <a href="https://remzi.info/">Remzi Cavdar</a>  {{'<-'}}-->
           </p>
           <p class="mb-4">
             <a href="https://app.netlify.com/sites/remzi/deploys"
