@@ -22,7 +22,7 @@
 <!--            -> <a href="https://remzi.info/">Remzi Cavdar</a>  {{'<-'}}-->
           </p>
           <p class="mb-4">
-            <a href="https://app.netlify.com/sites/remzi/deploys"
+            <a href="https://app.netlify.com/sites/guust-metz/deploys"
                target="_blank">
               <img src="https://api.netlify.com/api/v1/badges/87c06cec-b452-4239-ba57-5cc0a1277c2b/deploy-status"
                    alt="Build status of website">

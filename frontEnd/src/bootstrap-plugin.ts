@@ -11,7 +11,7 @@ import * as bootstrap from 'bootstrap'
  * that happens, you can make the warning go away by adding an empty install function to the plugin object.
  *
  * This simple mockup plugin is enough to make the warning go away.
- * @author Remzi Cavdar - remzi.cavdar@hva.nl - Student at the Amsterdam University of Applied Sciences
+ * @author Guust Metz - guust.metz@hva.nl - Student at the Amsterdam University of Applied Sciences
  */
 
 export default {
