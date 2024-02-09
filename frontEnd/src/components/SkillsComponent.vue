@@ -19,7 +19,7 @@ export default {
         {name: "Vue/Vite",score:3},
         {name: "SpringBoot",score:4},
         {name: "MySQL",score:3},
-        {name: "MongoDB",score:2}
+        {name: "Ruby on Rails",score:2}
       ] as skill[],
     }
   },
@@ -27,9 +27,10 @@ export default {
 </script>
 
 <template>
-  <h4 class="red">Skills</h4>
-  <h5 class="yellow">Utility</h5>
+  <h2 class="red d-flex flex-grow-1 justify-content-center">Skills</h2>
+  <div class="d-flex flex-row justify-content-around">
   <article>
+  <h5 class="yellow">Utility</h5>
     <div class="skill-rating" v-for="(utility,index) in utilities" :key="index">
       <span>{{ utility.name }}</span>
       <div class="rating">
@@ -38,10 +39,10 @@ export default {
         </template>
       </div>
     </div>
-
   </article>
-  <h5 class="yellow">Languages & frameworks</h5>
+
   <article>
+    <h5 class="yellow">Languages & frameworks</h5>
     <div class="skill-rating" v-for="(framework,index) in frameWorks" :key="index">
       <span>{{ framework.name }}</span>
       <div class="rating">
@@ -51,6 +52,9 @@ export default {
       </div>
     </div>
   </article>
+
+  </div>
+
 
 </template>
 
