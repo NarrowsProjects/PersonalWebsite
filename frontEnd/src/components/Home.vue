@@ -9,17 +9,9 @@
             but I am working on filling it with my projects. Currently, the following sections are available:
             <div class="btn btn-link" v-for="component in componenten" @click="redirect(component)"><a>{{ component.name }}</a></div>
           </p>
-          <h2>I want to work on/with open source <img src="../assets/img/emoji/rocket.webp" alt="🚀" width="32" height="32">
-          </h2>
-          <p>I enjoy and want to create not just for myself but also for whomever finds what I build.
-            Open source projects (may) allow me to receive large amounts of feedback. I invite both people who are interested in me and people
-            who just stumble upon this site to criticize me to their hearts content as my ambitions are quite lofty.
-          </p>
           <p>
             My public projects or lack thereof are available on: <a href="https://github.com/NarrowsProjects"
                                                                         target="_blank">github.com/NarrowsProjects/</a>
-<!--            And while you're looking at open source anyway, you might as well look at the guy who's website I blatantly stole.-->
-<!--            -> <a href="https://remzi.info/">Remzi Cavdar</a>  {{'<-'}}-->
           </p>
           <p class="mb-4">
             <a href="https://app.netlify.com/sites/guust-metz/deploys"
@@ -28,15 +20,28 @@
                    alt="Build status of website">
             </a>
           </p>
+          
+          <h2>Prefered frameworks</h2>
           <h3>
+            Ruby on Rails
             <img src="../assets/img/emoji/red-heart.webp" alt="❤" width="32" height="32">
+          </h3>
+          <p>
+            Ruby on Rails is my framework of choice. Its convention over configuration philosophy, along with the simplicity of Ruby, makes it development a breeze.
+          </p>
+          <p>
+            <span id="ruby-on-rails-logo">
+              <img src="../assets/img/rails-svgrepo-com.svg" alt="❤" width="32" height="32">
+            </span>
+          </p>
+          
+          <h3>
             Vue.js + Typescript
             <img src="../assets/img/emoji/100.webp" alt="💯" width="32" height="32">
           </h3>
           <p>
-            I am currently learning vue.js and Angular and am loving it thus far. I am also considering just focusing on TypeScript rather than javascript.
-            Although if javascript's optional type annotations proposal comes to pass come to pass future ill likely
-            switch back to it again. Regardless both are languages that I am very familiar and have grown to love with.
+            I am fammiliar with vue.js and it is my preffered "standard" frontend framework. I am also considering just focusing on TypeScript rather than javascript.
+            Regardless, both are languages that I am very familiar with and have grown to love.
           </p>
           <p>
             <span id="vue-js-logo">

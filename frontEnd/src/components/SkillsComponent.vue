@@ -17,9 +17,9 @@ export default {
         {name: "Java",score: 4},
         {name: "Java/Type - Script",score:4},
         {name: "Vue/Vite",score:3},
-        {name: "SpringBoot",score:4},
+        {name: "SpringBoot",score:3},
         {name: "MySQL",score:3},
-        {name: "Ruby on Rails",score:2}
+        {name: "Ruby on Rails",score:4}
       ] as skill[],
     }
   },
