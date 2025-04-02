@@ -10,8 +10,7 @@
             <div class="btn btn-link" v-for="component in componenten" @click="redirect(component)"><a>{{ component.name }}</a></div>
           </p>
           <p>
-            My public projects or lack thereof are available on: <a href="https://github.com/NarrowsProjects"
-                                                                        target="_blank">github.com/NarrowsProjects/</a>
+            My public projects are available on: <a href="https://github.com/NarrowsProjects" target="_blank">github.com/NarrowsProjects/</a>
           </p>
           <p class="mb-4">
             <a href="https://app.netlify.com/sites/guust-metz/deploys"
