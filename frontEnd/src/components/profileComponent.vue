@@ -17,8 +17,8 @@ export default {
       <p class="card-text small">
         I am Guust. A driven, active and ambitious software engineering student.
         I used to be an chemist but due to some unfortunate circumstances I am no longer able to be.
-        However, I still want to continue to contribute to the scientific progress even if it is only from behind a computer
-        instead of from the lab. I will admit, those ambitions are pretty far away now.
+        However, I still want to continue to contribute to the scientific progress wether its from behind a computer
+        or from the lab. I will admit, those ambitions are rather distant for now.
         So until I acquire the necessary skills let's just see what I can do for you!
       </p>
       <p class="small">

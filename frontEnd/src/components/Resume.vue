@@ -28,7 +28,12 @@
           <h4 class="red">Work experience</h4>
           <template v-for="workExperience of workExperiences" :key=workExperience.role>
             <h5>{{ workExperience.role}}</h5>
-            <h6>{{ workExperience.company}}  {{ workExperience.job }}  {{ workExperience.from}} {{ workExperience.to}}</h6>
+            <h6 class="workExperienceDetails">
+              <a :href="workExperience.companyLink">{{ workExperience.company}}</a> 
+              <a :href="workExperience.proofLink">{{ workExperience.job }}</a>  
+              {{ workExperience.from}}
+              {{ workExperience.to}}
+            </h6>
 
           </template>
           <hr/>
@@ -47,13 +52,13 @@ export default {
   name: 'Resume',
   components: {SkillsComponent, ProfileComponent},
   data(){
-    return{
+    return {
       workExperiences:[
-          {role:"AI Chatbot & Evaluation System Developer",company:"Directie financiën Amsterdam :", job:"",from:"10/2024 - ", to:"01/2025"},
-          {role:"Full-stack development",company:"Klinkende Taal :",job:" Full stack Rails development",from:"02/2024 - ", to:"08/2024"},
-          {role:"Assisting students",company:"HvA :",job:"  Student mentor : ",from:"08/2023 - ", to:"01/2024"},
-          {role:"Leading teams",company:"Waterpolokampen.nl :",job:" Team-leader : ",from:"04/2023 - ", to:"09/2023"},
-          {role:"Tutoring",company:"Volunteer :",job:" Physics tutor : ",from:"12/2019 - ", to:"06/2020"}
+          {role:"Full-stack development", company:"CERN", job:"Quality Control GUI/WebUi:", from:"4/2025 - ", to:"07/2025", companyLink: 'https://home.cern/', proofLink: 'https://github.com/AliceO2Group/WebUi' },
+          {role:"AI Chatbot & Evaluation System Developer",company:"Directie financiën Amsterdam:", job:"",from:"10/2024 - ", to:"01/2025", companyLink: 'https://www.amsterdam.nl/bestuur-organisatie/organisatie/bedrijfsvoering/directie-financien-inkoop/' },
+          {role:"Full-stack development",company:"Klinkende Taal:",job:" Full stack Rails development:",from:"02/2024 - ", to:"08/2024", companyLink: 'https://klinkendetaal.nl/' },
+          {role:"Assisting students",company:"HvA:",job:"  Student mentor : ",from:"08/2023 - ", to:"01/2024", companyLink: 'https://www.hva.nl/' },
+          {role:"Leading teams",company:"Waterpolokampen.nl:",job:" Team-leader : ",from:"04/2023 - ", to:"09/2023", companyLink: 'https://waterpolokampen.nl' },
       ] as WorkExperience[]
     }
   }
