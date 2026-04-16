@@ -27,18 +27,20 @@
           <h6>Calculus, Physics, Chemistry, Biology</h6>
 
           <h4 class="red">Work experience</h4>
-          <template v-for="workExperience of workExperiences" :key=workExperience.role> 
-            <h5>{{ workExperience.role }} </h5 >
-            <template v-for="experience of workExperience.experiences" :key=experience.job> 
-              <h6 class="workExperience Details" >
-                <a :href="experience.companyLink">{{ experience.company }}</a>
-                <span> - </span>
-                <a :href="experience.proofLink">{{ experience.job }}</a>
-                {{ experience.from}}
-                {{ experience.to }}
-              </h6>
-            </template>
-          </template>
+          <div class="workExperienceDetails">
+            <div v-for="workExperience of workExperiences" :key=workExperience.role> 
+              <h5>{{ workExperience.role }} </h5 >
+              <template v-for="experience of workExperience.experiences" :key=experience.job> 
+                <h6 class="workExperience Details" >
+                  <a :href="experience.companyLink">{{ experience.company }}</a>
+                  <span> - </span>
+                  <a :href="experience.proofLink">{{ experience.job }}</a>
+                  {{ experience.from}}
+                  {{ experience.to }}
+                </h6>
+              </template>
+            </div>
+          </div>
           <hr/>
         </div>
           <skillsComponent/>
@@ -61,7 +63,7 @@ export default {
           role: "Full-stack development",  experiences: [
             { company:"CERN", job: "BKP/WebUi:", from: "01/2026 - ", to: "07/2026", companyLink: 'https://home.cern/', proofLink: 'https://github.com/AliceO2Group/WebUi' },
             { company:"CERN", job: "Quality Control GUI/WebUi:", from: "4/2025 - ", to: "07/2025", companyLink: 'https://home.cern/', proofLink: 'https://github.com/AliceO2Group/WebUi' },
-            { company:"Klinkende Taal:", job: " Full stack Rails development:", from: "02/2024 - ", to: "08/2024", companyLink: 'https://klinkendetaal.nl/'},
+            { company:"Klinkende Taal:", job: "Application maintainence", from: "02/2024 - ", to: "08/2024", companyLink: 'https://klinkendetaal.nl/'},
           ]
         },
         {
@@ -71,7 +73,7 @@ export default {
         },
         {
           role: "Assisting students", experiences: [
-            { company:"HvA:", job: "  Student mentor  : ", from: "08/2023 - ", to: "01/2024", companyLink: 'https://www.hva.nl/' },
+            { company:"HvA:", job: "Student mentor", from: "08/2023 - ", to: "01/2024", companyLink: 'https://www.hva.nl/' },
           ]
         },
       ] as WorkExperience[]
