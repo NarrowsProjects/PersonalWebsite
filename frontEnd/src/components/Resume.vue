@@ -74,11 +74,6 @@ export default {
             { company:"HvA:", job: "  Student mentor  : ", from: "08/2023 - ", to: "01/2024", companyLink: 'https://www.hva.nl/' },
           ]
         },
-        {
-          role: "Leading teams", experiences: [
-            { company:"Waterpolokampen.nl:", job: " Team-leader : ", from: "04/2023 - ", to: "09/2023", companyLink: 'https://waterpolokampen.nl' },
-          ]
-        },
       ] as WorkExperience[]
     }
   }
