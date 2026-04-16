@@ -8,23 +8,23 @@
           <div class="card-body">
             <h2 class="card-title">Database Energy Benchmark Suite <span class="badge bg-primary">Rust</span></h2>
             <p class="card-text">
-              A Rust high-performance benchmarking tool measuring energy efficiency differences between 
+              A Rust performance benchmarking tool measuring energy efficiency differences between 
               MongoDB and PostgreSQL when handling hierarchical data operations. 
             </p>
 
             <h5>Key Features:</h5>
             <ul class="list-group list-group-flush mb-3">
               <li class="list-group-item">
-                🔋Comparative energy analysis with Intel PCM monitoring
+                Comparative energy analysis with Intel PCM monitoring
               </li>
               <li class="list-group-item">
-                ⚡JSON testdata generation (3/5/10 nesting levels)
+                JSON testdata generation (3/5/10 nesting levels)
               </li>
               <li class="list-group-item">
-                🔄 Workload simulations (5:1 and 1:5 read/write ratios)
+                Workload simulations (5:1 and 1:5 read/write ratios)
               </li>
               <li class="list-group-item">
-                📁 CSV output for detailed energy consumption metrics
+                CSV output for detailed energy consumption metrics
               </li>
             </ul>
 
