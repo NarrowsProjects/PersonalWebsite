@@ -8,18 +8,18 @@ export default {
   data(){
     return{
       utilities:[
-        {name: "Dutch",score: 4},
-        {name: "English",score:4},
-        {name: "Full Stack Development",score:3},
-        {name: "Scrum",score:3}
+        { name: "Dutch", score: 4 },
+        { name: "English", score: 4 },
+        { name: "Full Stack Development", score: 4 },
+        { name: "Scrum", score: 3 },
       ] as skill[],
       frameWorks:[
-        {name: "Java",score: 4},
-        {name: "Java/Type - Script",score:4},
-        {name: "Vue/Vite",score:3},
-        {name: "SpringBoot",score:3},
-        {name: "MySQL",score:3},
-        {name: "Ruby on Rails",score:4}
+        { name: "Java", score: 4 },
+        { name: "Java/Type - Script", score: 4 },
+        { name: "Vue", score: 3 },
+        { name: "SpringBoot", score: 3 },
+        { name: "Mithriljs", score: 4 },
+        { name: "Ruby on Rails", score: 4 },
       ] as skill[],
     }
   },
