@@ -12,19 +12,19 @@
         </div>
         <div class="col-md-8">
           <h2 class="text-center">Guust Metz</h2>
-          <h3 class="text-center yellow">Software Engineering student</h3>
+          <h3 class="text-center yellow">Software Engineer</h3>
           <hr/>
           <h4 class="red">Education</h4>
-          <h5>Hogeschool van Amsterdam - 09/2022 - now</h5>
-          <h6>HBO-ICT Software Engineering</h6>
-          <ul>
+          <h5>Hogeschool van Amsterdam - 09/2022 - 07/2026</h5>
+          <h6 style="margin-left: 10px;">HBO-ICT Software Engineering</h6>
+          <ul style="margin-left: 10px;">
             <li>Minor: Applied Artificial Inteligence - 09/2024 - 01/2025</li>
             <li>Minor: Immersive technologies - 09/2025 - 01/2026</li>
           </ul>
           <h5>Hogeschool InHolland - 09/2021 - 05/2022</h5>
-          <h6>HBO Agri, Food & Life Sciences</h6>
+          <h6 style="margin-left: 10px;">HBO Agri, Food & Life Sciences</h6>
           <h5>St. Patrick's college - 10/2019 - 11/2020</h5>
-          <h6>Calculus, Physics, Chemistry, Biology</h6>
+          <h6 style="margin-left: 10px;">Calculus, Physics, Chemistry, Biology</h6>
 
           <h4 class="red">Work experience</h4>
           <div class="workExperienceDetails">
@@ -88,5 +88,8 @@ img {
 }
 article{
  margin-left: 10px;
+}
+.workExperience.Details {
+  margin-left: 10px;
 }
 </style>
