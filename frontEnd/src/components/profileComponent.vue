@@ -15,8 +15,9 @@ export default {
     <div class="card-body">
       <h6 class="card-title">Profile</h6>
       <p class="card-text small">
-        I am Guust, an active and ambitious software engineering student who wants to apply his skillset in meaningfull ways.   
-        I'm especially interested in contributing to scientific progress, using technology to better understand complicated problems.
+        I am Guust, an aspiring software engineer who wants to apply his skillset in meaningfull ways.   
+        I'm especially interested in contributing to scientific progress using technology to better understand complicated problems.
+        I work well in existing projects, adapting quickly to established codebases and collaborating effectively with others.
       </p>
       <p class="small">
         <strong><i class="bi bi-phone"></i> Phone number:</strong> <a href="tel:+31636587923">06 365 879 23</a><br>
