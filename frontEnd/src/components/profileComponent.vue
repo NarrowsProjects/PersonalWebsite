@@ -20,7 +20,7 @@ export default {
         I work well in existing projects, adapting quickly to established codebases and collaborating effectively with others.
       </p>
       <p class="small">
-        <strong><i class="bi bi-phone"></i> Phone number:</strong> <a href="tel:+31636587923">06 365 879 23</a><br>
+        <strong><i class="bi bi-phone"></i> Phone number:</strong> <a href="tel:+31636587923">+31 6 365 879 23</a><br>
         <strong><i class="bi bi-envelope-at"></i> E-mail:</strong> <a
           href="mailto:metzguust@gmail.com">metzguust@gmail.com</a><br>
         <strong><i class="bi bi-map"></i> Nationality:</strong> Dutch<br>

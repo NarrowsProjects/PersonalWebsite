@@ -4,7 +4,7 @@
     <p>
       <strong><i class="bi bi-person"></i> Name:</strong> Guust Metz<br>
       <strong><i class="bi bi-house"></i> Home town:</strong> Zaandam<br>
-      <strong><i class="bi bi-phone"></i> Phone number:</strong> <a href="tel:+31636587923">06 36 58 7923</a><br>
+      <strong><i class="bi bi-phone"></i> Phone number:</strong> <a href="tel:+31636587923">+31 6 36 58 7923</a><br>
       <strong><i class="bi bi-envelope-at"></i> E-mail:</strong> <a
         href="mailto:metzguust@gmail.com">metzguust@gmail.com</a><br>
       <strong><i class="bi bi-envelope-at"></i> E-mail HvA:</strong> <a
