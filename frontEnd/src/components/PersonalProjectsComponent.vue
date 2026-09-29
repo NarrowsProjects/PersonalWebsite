@@ -11,6 +11,12 @@ export default {
           technologies: ["Python 3.10", "Blender Python API 3.4"],
         },
         {
+          title: "Personal website",
+          proofLink: "https://github.com/NarrowsProjects/database-energy-benchmarker",
+          description: "",
+          technologies: ["Vite", "Vue 3.0", "TypeScript", "Bootstrap"],
+        },
+        {
           title: "Rust database energy benchmarker for hierarchical data",
           proofLink: "https://github.com/NarrowsProjects/database-energy-benchmarker",
           description: `Compares energy expendature per query for hierarchical data between PostgreSQL 17.4+ and MongoDB 8.06 using Intel PCM.
