@@ -44,6 +44,10 @@
           <hr/>
         </div>
           <skillsComponent/>
+          <div class="page-break"></div>
+          <br/>
+          <br/>
+          <PersonalProjectsComponent/>
       </div>
     </div>
   </main>
@@ -52,13 +56,14 @@
 <script lang="ts">
 import ProfileComponent from "@/profileComponent.vue";
 import SkillsComponent from "@/SkillsComponent.vue";
+import PersonalProjectsComponent from "@/PersonalProjectsComponent.vue";
 
 export default {
   name: 'Resume',
-  components: {SkillsComponent, ProfileComponent},
+  components: { SkillsComponent, ProfileComponent, PersonalProjectsComponent },
   data(){
     return {
-      workExperiences:[
+      workExperiences: [
         {
           role: "Full-stack development",  experiences: [
             { company:"CERN", job: "BKP/WebUi:", from: "01/2026 - ", to: "07/2026", companyLink: 'https://home.cern/', proofLink: 'https://github.com/AliceO2Group/WebUi' },
@@ -91,5 +96,8 @@ article{
 }
 .workExperience.Details {
   margin-left: 10px;
+}
+.page-break {
+  break-before: page;
 }
 </style>
