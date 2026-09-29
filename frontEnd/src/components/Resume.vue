@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 items-end">
           <ProfileComponent/>
         </div>
         <div class="col-md-8">
