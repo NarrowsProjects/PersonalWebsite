@@ -10,7 +10,7 @@ export default {
 }
 </script>
 <template>
-  <div class="card mb-3" style="width: 100%;">
+  <div class="card mb-3 w-100">
     <img :src="profileImage" class="card-img-top" alt="Profile image">
     <div class="card-body">
       <h6 class="card-title">Profile</h6>
@@ -33,7 +33,4 @@ export default {
 </template>
 
 <style scoped lang="scss">
-.card-img-top{
-  max-width: 50vw;
-}
 </style>
