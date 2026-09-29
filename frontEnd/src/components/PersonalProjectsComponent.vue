@@ -12,8 +12,8 @@ export default {
         },
         {
           title: "Personal website",
-          proofLink: "https://github.com/NarrowsProjects/database-energy-benchmarker",
-          description: "",
+          proofLink: "https://github.com/NarrowsProjects/PersonalWebsite",
+          description: "Personal website",
           technologies: ["Vite", "Vue 3.0", "TypeScript", "Bootstrap"],
         },
         {
