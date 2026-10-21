@@ -12,7 +12,6 @@ import CollaborationComponent from "./components/ColaborationDocumentation/Colla
 import IssueForm from "./components/ColaborationDocumentation/IssueForm.vue";
 import IssueTable from "./components/ColaborationDocumentation/IssueTable.vue";
 
-// Routes
 const routes = [
     {path: '/index.html', redirect: '/'},
     {path: '/', component: Home},
