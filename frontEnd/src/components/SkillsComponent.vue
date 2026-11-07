@@ -6,7 +6,7 @@ interface skill{
 export default {
   name:"SkillsComponent",
   data(){
-    return{
+    return {
       utilities:[
         { name: "Dutch (C2)", score: 4.5 },
         { name: "English (C2)", score: 4.5 },
@@ -14,14 +14,17 @@ export default {
         { name: "Git Version Management", score: 4 },
         { name: "Full Stack Development", score: 4 },
         { name: "Agile Development", score: 3.5 },
+        { name: "AI development", score: 2.5 },
       ] as skill[],
       frameWorks:[
         { name: "Java/Type - Script", score: 4 },
         { name: "Python", score: 3 },
-        { name: "Vue", score: 4 },
+        { name: "Vue.js", score: 4 },
         { name: "SpringBoot", score: 3 },
-        { name: "React", score: 2.5 },
+        { name: "Ruby on Rails", score: 4 },
+        { name: "C#", score: 2.5 },
         { name: "Mithriljs", score: 4 },
+        { name: "Rust", score: 2.5 },
       ] as skill[],
     }
   },

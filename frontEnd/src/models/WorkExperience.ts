@@ -4,7 +4,10 @@ interface WorkExperience {
         company: string;
         companyLink: string|undefined;
         job: string;
-        proofLink: string|undefined;
+        proofLink: {
+            href: string,
+            text: string,
+        } | undefined
         from: string;
         to: string;
     }>

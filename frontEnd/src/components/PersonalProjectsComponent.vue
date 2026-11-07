@@ -5,10 +5,10 @@ export default {
     return {
       personalProjects: [
         {
-          title: "Spine 4.0 JSON to Blender 3.4 mesh converter add-on",
+          title: "Spine 4.0 JSON mesh importer/exporter Blender add-on",
           proofLink: "https://github.com/NarrowsProjects/blender_json_to_mesh_spine_4.0_builder",
-          description: "Allows users to import spine 4.0 JSON skeleton exports into blender 3.4",
-          technologies: ["Python 3.10", "Blender Python API 3.4"],
+          description: "Allows users to import spine 4.0 JSON skeleton exports into blender",
+          technologies: ["Python 3.10", "Blender Python API 3+ & 4+"],
         },
         {
           title: "Personal website",
@@ -26,7 +26,7 @@ export default {
         {
           title: "Red tool replenishment mod for Hollow Knight: Silksong",
           proofLink: "https://github.com/NarrowsProjects/Silksong.ReplenishTools",
-          description: "Overhauls how red tools are managed in Hollow Knigh Silksong.",
+          description: "Overhauls how red tools are managed in Hollow Knight Silksong.",
           technologies: ["C#", "BepInEx"],
         },
         {
@@ -43,6 +43,12 @@ export default {
           proofLink: "https://github.com/NarrowsProjects/boodschappenlijst",
           description: "Simple Ruby on Rails application used to list groceries",
           technologies: ["Ruby on Rails 8.0.2"],
+        },
+        {
+          title: "BKP tests copy & paste to dev console browser extension",
+          proofLink: "https://github.com/NarrowsProjects/BKP-Integration-test-functions-mimicry-extension",
+          description: "Chromium extension that allows users to copy function calls from tests used in the BKP application and paste them in the dev console for debugging",
+          technologies: ["JavaScript"],
         },
       ] as PersonalProject[]
     }

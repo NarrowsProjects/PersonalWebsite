@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 items-end">
+        <div class="col-md-4 d-flex align-items-end">
           <ProfileComponent/>
         </div>
         <div class="col-md-8">
@@ -34,7 +34,8 @@
                 <h6 class="workExperience Details" >
                   <a :href="experience.companyLink">{{ experience.company }}</a>
                   <span> - </span>
-                  <a :href="experience.proofLink">{{ experience.job }}</a>
+                  <span> {{ experience.job }} </span>
+                  <a :href="experience.proofLink?.href">{{ experience.proofLink?.text }}</a>
                   {{ experience.from}}
                   {{ experience.to }}
                 </h6>
@@ -66,19 +67,19 @@ export default {
       workExperiences: [
         {
           role: "Full-stack development",  experiences: [
-            { company:"CERN", job: "BKP/WebUi:", from: "01/2026 - ", to: "07/2026", companyLink: 'https://home.cern/', proofLink: 'https://github.com/AliceO2Group/WebUi' },
-            { company:"CERN", job: "Quality Control GUI/WebUi:", from: "4/2025 - ", to: "07/2025", companyLink: 'https://home.cern/', proofLink: 'https://github.com/AliceO2Group/WebUi' },
-            { company:"Klinkende Taal:", job: "Application maintainence", from: "02/2024 - ", to: "08/2024", companyLink: 'https://klinkendetaal.nl/'},
+            { company:"CERN", job: "Ticket implementation ", from: "01/2026 - ", to: "07/2026", companyLink: 'https://home.cern/', proofLink: { href: 'https://github.com/AliceO2Group/WebUi', text: "BKP/WebUi:"} },
+            { company:"CERN", job: "Application maintenance ", from: "4/2025 - ", to: "07/2025", companyLink: 'https://home.cern/', proofLink: { href: 'https://github.com/AliceO2Group/WebUi', text: "Quality Control GUI:"} },
+            { company:"Klinkende Taal:", job: "Application maintenance", from: "02/2024 - ", to: "08/2024", companyLink: 'https://klinkendetaal.nl/'},
           ]
         },
         {
           role: "AI Chatbot & Evaluation System Developer", experiences: [
-            { company:"Directie financiën Amsterdam:", job: "", from: "10/2024 - ", to: "01/2025", companyLink: 'https://www.amsterdam.nl/bestuur-organisatie/organisatie/bedrijfsvoering/directie-financien-inkoop/' },
+            { company:"Directie financiën Amsterdam:", job: "AI development", from: "10/2024 - ", to: "01/2025", companyLink: 'https://www.amsterdam.nl/bestuur-organisatie/organisatie/bedrijfsvoering/directie-financien-inkoop/' },
           ]
         },
         {
-          role: "Assisting students", experiences: [
-            { company:"HvA:", job: "Student mentor", from: "08/2023 - ", to: "01/2024", companyLink: 'https://www.hva.nl/' },
+          role: "Mobile app development", experiences: [
+            { company: "Enjoy Cleaning Up", job: "Computer vision trash recognition app", from: "09/2025 - ", to: "01/2026", companyLink: "https://enjoycleaningup.com/" }
           ]
         },
       ] as WorkExperience[]
