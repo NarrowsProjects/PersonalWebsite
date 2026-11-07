@@ -5,12 +5,12 @@
         <div class="col-xl-8">
           <h1>I am {{ name }}</h1>
           <p>
-            I am studying Software Engineering at the Amsterdam University of Applied Sciences. My website is still bare,
-            but I am working on filling it with my projects. Currently, the following sections are available:
-            <div class="btn btn-link" v-for="component in componenten" @click="redirect(component)"><a>{{ component.name }}</a></div>
+            I am a Software Engineering graduate from Amsterdam University of Applied Sciences.
           </p>
           <p>
-            My public projects are available on: <a href="https://github.com/NarrowsProjects" target="_blank">github.com/NarrowsProjects/</a>
+            My public projects are available on <a href="https://github.com/NarrowsProjects" target="_blank">github.com/NarrowsProjects/</a>
+            <br>
+            And an overview of the larger projects can be found <router-link to="/portfolio">here</router-link>
           </p>
           <p class="mb-4">
             <a href="https://app.netlify.com/sites/guust-metz/deploys"
@@ -26,7 +26,7 @@
             <img src="../assets/img/emoji/red-heart.webp" alt="❤" width="32" height="32">
           </h3>
           <p>
-            Ruby on Rails is my framework of choice. Its convention over configuration philosophy, along with the simplicity of Ruby, makes it development a breeze.
+            Ruby on Rails is my framework of choice. Its convention-over-configuration philosophy, along with the simplicity of Ruby, makes its development a breeze.
           </p>
           <p>
             <span id="ruby-on-rails-logo">
@@ -39,8 +39,9 @@
             <img src="../assets/img/emoji/100.webp" alt="💯" width="32" height="32">
           </h3>
           <p>
-            I am fammiliar with vue.js and it is my preffered "standard" frontend framework. I am also considering just focusing on TypeScript rather than javascript.
-            Regardless, both are languages that I am very familiar with and have grown to love.
+            I am familiar with Vue.js, and it is my preferred "standard" frontend framework. 
+            I am also considering just focusing on TypeScript rather than JavaScript. 
+            Regardless, both are languages that I am very familiar with and have grown to love.          
           </p>
           <p>
             <span id="vue-js-logo">
