@@ -1,5 +1,5 @@
 <script  lang="ts">
-import  profileImage from "../assets/img/CVfotoGuust.png"
+import  profileImage from "../assets/img/CVfotoGuust2.png"
 export default {
   name:"ProfileComponent",
   data(){
